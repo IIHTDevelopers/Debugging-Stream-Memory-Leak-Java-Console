@@ -14,8 +14,8 @@ public class Main {
         while ((line = br.readLine()) != null) {
             count++;
         }
-        // BUG: stream never closed
-        //br.close();
+        // BUG: best practice not followed
+        
         return count;
     }
 }
